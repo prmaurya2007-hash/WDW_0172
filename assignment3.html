@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Block and Inline Elements</title>
+  <style>
+    /* Container box matching the green outline in the output */
+    .output-box {
+      border: 1px solid #9ec99e;
+      padding: 15px 40px;
+      font-family: Georgia, serif;
+    }
+
+    /* Block elements take up the full width and stack vertically */
+    .block-element {
+      background-color: #add8e6; /* Light blue */
+      margin-bottom: 4px;
+    }
+
+    /* Inline elements only take up as much width as their content and sit side-by-side */
+    .inline-element {
+      background-color: #90ee90; /* Light green */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="output-box">
+    <!-- <div> is a standard block-level element -->
+    <div class="block-element">Block 1</div>
+    <div class="block-element">Block 2</div>
+
+    <!-- <span> is a standard inline element -->
+    <span class="inline-element">Inline 1</span>
+    <span class="inline-element">Inline 2</span>
+    <span class="inline-element">Inline 3</span>
+  </div>
+
+</body>
+</html>
