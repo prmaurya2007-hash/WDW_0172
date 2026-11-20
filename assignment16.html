@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 16: Select, Textarea and Buttons</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <!-- Dropdown (Select) -->
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+            <option value="ece" selected>ECE</option>
+            <option value="cse">CSE</option>
+            <option value="eee">EEE</option>
+            <option value="mech">MECH</option>
+            <option value="civil">CIVIL</option>
+        </select>
+
+        <br><br>
+
+        <!-- Multi-line Text Box (Textarea) -->
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="Write here..."></textarea>
+
+        <br><br>
+
+        <!-- Different Button Types -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="alert('Button clicked!')">Click Me</button>
+    </form>
+
+</body>
+</html>
