@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 17: Form Attributes and Input Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    input {
+      display: block;
+      width: 250px;
+      margin-bottom: 12px;
+      padding: 4px;
+    }
+    input[type="number"] {
+      width: 70px;
+    }
+    button {
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="/register" method="POST">
+    <!-- Full Name -->
+    <input type="text" name="fullname" placeholder="Full name" required minlength="2" maxlength="50">
+
+    <!-- Email -->
+    <input type="email" name="email" placeholder="you@college.edu" required>
+
+    <!-- 10-digit Mobile -->
+    <input type="tel" name="mobile" placeholder="10-digit mobile" pattern="[0-9]{10}" maxlength="10" required title="Please enter a valid 10-digit mobile number">
+
+    <!-- Password (Min 6 characters) -->
+    <input type="password" name="password" placeholder="Min 6 characters" minlength="6" required>
+
+    <!-- Age (17 to 60) -->
+    <input type="number" name="age" placeholder="Age (17-60)" min="17" max="60" required>
+
+    <!-- Submit Button -->
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+</html>
