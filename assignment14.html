@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 14: Nested and Responsive Tables</title>
+  <style>
+    /* Container for responsive horizontal scrolling */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    th, td {
+      border: 1px solid #555;
+      padding: 10px 15px;
+    }
+
+    /* Styling for the inner nested table */
+    .nested-table {
+      width: 100%;
+    }
+
+    .nested-table th, .nested-table td {
+      padding: 6px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Lab Batches</th>
+          <th>Faculty</th>
+          <th>Room</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Friday</td>
+          <td>
+            <!-- Nested Table inside the cell -->
+            <table class="nested-table">
+              <thead>
+                <tr>
+                  <th>Batch</th>
+                  <th>System</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A1</td>
+                  <td>PC 1-20</td>
+                </tr>
+                <tr>
+                  <td>A2</td>
+                  <td>PC 21-40</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td>Dr. Sharma</td>
+          <td>Lab 2</td>
+          <td>2-4 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
